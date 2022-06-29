@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Hook from './hook';
+import TodoApp from './hook2';
+import Login from './login';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Hook/>
+    <hr></hr>
+    <br></br>
+    <TodoApp/>
+    <hr></hr>
+    <br></br>
+    <Login/>
+    <br></br>
     </div>
   );
 }
